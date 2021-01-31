@@ -1,0 +1,179 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#scrollToTop{
+    position:fixed;
+    bottom:40px;
+    right:40px;
+    height:60px;
+    width:60px;
+    font-size:xx-large;
+    border-radius:50%;
+    border:0;
+
+}
+.menu-bar{
+    background-color: #8B4513;
+    text-align: center;
+    opacity: .8;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active, .menu-bar ul li:hover{
+    background: #F4A460;
+    border-radius: 3px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+section.sec1{
+    background: url(https://steamuserimages-a.akamaihd.net/ugc/100603056096577857/666E30BD0EEFD75F91A8B319B5F3222E70855CB5/);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec2{
+    background: url(https://steamuserimages-a.akamaihd.net/ugc/100603056096642547/028134A3F9AC9B7560FDD0DFD8A3DC8B749D9D71/);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec3{
+    background: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/105600/34c0485e69daae19c0fe979d997159e005722e79.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec4{
+    background: url(https://i.imgur.com/ZWfqjBx.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec5{
+    background: url(https://img2.wikia.nocookie.net/__cb20110802001210/terraria/images/3/3a/Terraria_environment_underworld.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec6{
+    background: url(https://vignette.wikia.nocookie.net/terraria/images/0/09/2013-06-21_00001.jpg/revision/latest?cb=20130622020752);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec7{
+    background: url(https://i.redd.it/gz11xzo3dpq31.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec8{
+    background: url(https://vignette.wikia.nocookie.net/terraria/images/f/ff/2013-10-08_00002.jpg/revision/latest?cb=20131008223851);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec9{
+    background: url(https://i.redd.it/igzcsrm514py.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec10{
+    background: url(https://steamuserimages-a.akamaihd.net/ugc/100603056096676921/2A12C6A3429E82BC06724F25C4F5CF25B6A9699F/);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec11{
+    background: url(https://starbound-fr.net/wp-content/uploads/2013/04/fossilMock.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec12{
+    background: url(https://steamuserimages-a.akamaihd.net/ugc/100603056096704787/0C8AAFB2952ED23BB8298884BA4C5086FF904A76/);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec13{
+    background: url(https://media.alienwarearena.com/media/ea21b97b2e81b547f94c8f2609a27fa7.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec14{
+    background: url(https://steamuserimages-a.akamaihd.net/ugc/100603056096493083/DA92EE6E3CBD334328E8E695AD7D1C858D5692A8/);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec15{
+    background: url(https://gamepedia.cursecdn.com/terraria_gamepedia/1/13/Living_Mahogany_Tree.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec16{
+    background: url(https://i.redd.it/a6xt991zn9o31.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec17{
+    background: url(https://external-preview.redd.it/YiTdM1zkNm3hPBUA_BPISe1B3gAn829WcumPecIUPNU.png?auto=webp&s=ac804cb72c3d691f0fc5a2985fbd89504753c399);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec18{
+    background: url(https://art.ngfiles.com/images/916000/916086_mothimas_terraia-s-world-background-the-underworld.png?f1558833056);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec19{
+    background: url(https://i.kym-cdn.com/photos/images/original/000/869/084/def.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.sec20{
+    background: url(https://external-preview.redd.it/FCQdGunfffheQhAriBWzfR9FPoOCahxMn2epBXw8Zjw.png?auto=webp&s=f73aeb5ca6cfb870580ef5438b996f7491aadad5);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section.secText{
+    padding: 50px 100px;
+    height: auto;
+}
+section.secText h1{
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    color: #262626;
+}
+section.secText p{
+    font-size: 18px;
+}

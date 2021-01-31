@@ -1,0 +1,81 @@
+<!DOCDTYPE html>
+<html>
+<head>
+    <script>
+    function print_result() {
+
+    var fname=document.f1.fname.value;
+    var lname=document.f1.lname.value;
+    alert(fname+" "+ lname+", "+"Welcome to our club!");
+    var email = document.f1.email.value;
+    alert("Email Address: " + email);
+	 
+    var password = document.f1.pw.value;
+    alert("Password: " + password);
+        
+    var phoneNo = document.f1.phoneNo.value;
+    alert("Phone No: " + phoneNo);
+    
+  }
+
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="css/JoinUs.css">
+</head>
+    <body>
+        <div class="menu-bar">
+            <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li ><a href="NPCs.html">NPCs</a></li>
+                <li><a href="Biomes.html">Biomes</a></li>
+                <li><a href="Bosses.html">Bosses</a></li>
+                <li class="active"><a href="JoinUs.html">Join Us</a></li>
+            </ul>
+    </div>
+        
+       <div class="container">
+           <div class="formBx">
+               <form name="f1" onSubmit="print_result()">
+                   <h2>Join Us</h2>
+                   <div class="inputBox">
+                       <input type="text" name="fname" pattern="^[A-Z][a-z]*$"
+                 title="Capital first character" required="required">
+                       <span>First Name</span>
+                   </div>
+                   <div class="inputBox">
+                       <input type="text" name="lname" pattern="^[A-Z][a-z]*$"
+                 title="Capital first character" required="required">
+                       <span>Last Name</span>
+                   </div>
+                   <div class="inputBox">
+                       <input type="email" name="email" title="xxx@xxx" required="required">
+                       <span>Email Address</span>
+                   </div>
+                   <div class="inputBox">
+                       <input type="password" name="pw" pattern="^[a-zA-Z0-9]{8,10}"
+                 title="8 to 10 characters" required="required">
+                       <span>Password</span>
+                   </div>
+                   <div class="inputBox">
+                       <input type="text" name="phoneNo" pattern="[0-9]{8}$"
+                 title="12345678" required="required">
+                       <span>Phone No</span>
+                   </div>
+                   <div class="inputBox">
+                       <textarea required="required"></textarea>
+                       <span>Type your message here...</span>
+                   </div>
+                   <div class="inputBox">
+                       <input type="submit" value="Send" name="">
+                   </div>
+               </form>
+           </div>
+           <div class="slider">
+               
+            </div>
+        </div> 
+    </body>
+</html>

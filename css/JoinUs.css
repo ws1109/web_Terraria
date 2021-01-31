@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0d192e;
+}
+.menu-bar{
+    background-color: #8B4513;
+    text-align: center;
+    opacity: .8;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+    background: #F4A460;
+    border-radius: 3px;
+}
+.container{
+    position: relative;
+    top: 120;
+    left: 370;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px;
+    height: 650px;
+    background: #122647;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .formBx{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .formBx form{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+    
+}
+.container .formBx form h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+.container .formBx form .inputBox{
+    position: relative;
+    margin-bottom: 40px;
+}
+.container .formBx form .inputBox:last-child{
+    margin-bottom: 0px;
+}
+.container .formBx form .inputBox input,
+.container .formBx form .inputBox textarea{
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    resize: none;
+}
+.container .formBx form .inputBox textarea{
+    height: 100px;
+}
+.container .formBx form .inputBox input[type="submit"]{
+    background: #fff;
+    padding: 8px 20px;
+    margin-top: -10px;
+    width: 100px;
+    cursor: pointer;
+    background: #bf8040;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container .formBx form .inputBox input[type="submit"]:focus{
+    background: #1bfaad;
+    color: #111;
+}
+.container .formBx form .inputBox span{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.2s;
+}
+.container .formBx form .inputBox input:focus ~ span,
+.container .formBx form .inputBox textarea:focus ~ span,
+.container .formBx form .inputBox input:valid ~ span,
+.container .formBx form .inputBox textarea:valid ~ span{
+    transform: translateY(-24px);
+    color: #1bfaad;
+    font-size: 14px;
+}
+.container .formBx form .inputBox input:focus,
+.container .formBx form .inputBox textarea:focus,
+.container .formBx form .inputBox input:valid,
+.container .formBx form .inputBox textarea:valid{
+    border-bottom-color: #fff;
+}
+.slider{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    background: url(https://files.wallpaperpass.com/2019/10/terraria%20wallpaper%20148%20-%203954x2465-768x479.jpg);
+    background-size: 700px 400px;
+    opacity: 0.9;
+    animation: slide 20s infinite;
+    margin-left: 30px
+}
+@keyframes slide{
+    25%{
+        background: url(https://www.xboxwallpapers.net/1920x1200/terraria-eyes.jpg);
+        background-size: 700px 400px;
+        opacity: 0.9;
+    }
+    50%{
+        background: url(https://wallpaperset.com/w/full/c/b/9/179666.jpg);
+        background-size: 700px 400px;
+        opacity: 0.9;
+    }
+    75%{
+        background: url(https://c4.wallpaperflare.com/wallpaper/994/855/759/rain-lightning-terraria-magic-wallpaper-preview.jpg);
+        background-size: 700px 400px;
+        opacity: 0.9;
+    }
+    100%{
+        background: url(https://files.wallpaperpass.com/2019/10/terraria%20wallpaper%20148%20-%203954x2465-768x479.jpg);
+        background-size: 700px 400px;
+        opacity: 0.9;
+    }
+}
+@media(max-width:1000px){
+    .container{
+        top: 0;
+        left: 0;
+    }
+    .container .formBx{
+        width:100%;
+        padding: 0 50px;
+    }
+    .container .formBx form{
+        width: 100%;
+        max-width: 500px;
+        padding: 0;
+    }
+    .slider{
+        display: none;
+    }
+}
